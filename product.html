@@ -16,6 +16,91 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
 </head>
 <body>
+    <div class="container__mobilemenu hidden">
+        <div class="mobmenu">
+            <div class="mobmenu__header">
+                <div class="mobmenu__nav">
+                    <button class="mobmenu__nav-btn mobmenu__nav-btnmain mobmenu__nav-active" data-content="1" type="button">Каталог</button>
+                    <button class="mobmenu__nav-btn mobmenu__nav-btnmain" type="button" data-content="2">Меню</button>
+                    <button class="mobmenu__nav-btn mobmenu__nav-back hidden">Назад</button>
+                </div>
+                <div class="mobmenu__cross"></div>
+            </div>
+            <div class="mobmenu__main">
+                <div class="mobmenu__catalog " data-content="1">
+                    <p  class="mobmenu__item">Компьютеры</p>
+                    <p  class="mobmenu__item">Компьютеры</p>
+                    <p  class="mobmenu__item">Компьютеры</p>
+                    <p  class="mobmenu__item">Компьютеры</p>
+                    <p  class="mobmenu__item">Компьютеры</p>
+                    <p  class="mobmenu__item">Компьютеры</p>
+                    <p  class="mobmenu__item">Компьютеры</p>
+                    <p  class="mobmenu__item">Компьютеры</p>
+                    <p  class="mobmenu__item">Компьютеры</p>
+                </div>
+                <div class="mobmenu__menu hidden" data-content="2">
+                    <a class="mobmenu__item-second">О компании</a>
+                    <a class="mobmenu__item-second">Новости</a>
+                    <a class="mobmenu__item-second">Медиа</a>
+                    <a class="mobmenu__item-second">Адреса магазинов</a>
+                    <a class="mobmenu__item-second">Контакты</a>
+                </div>
+
+            </div>
+            <div class="mobmenu__category hidden">
+                <div class="mobmenu__category-item">
+                    <p >Ноутбуки и аксессуары</p>
+                    <a href="#">Ноутбуки</a>
+                    <a href="#">Сумки для ноутбуков</a>
+                    <a href="#">Подставки для ноутбуков</a>
+                    <a href="#">Блоки питания для ноутбуков</a>
+                    <a href="#">Док-станции для ноутбуков</a>
+                    <a href="#">Аккумуляторы для ноутбуков</a>
+                    <a href="#">Матрицы для ноутбуков</a>
+                    <a href="#">Защитные накладки для клавиатуры</a>
+                    <a href="#">Клавиатуры для ноутбуков</a>
+                    <a href="#">Защитные пленки и стекла</a>
+                    <a href="#">Петли для ноутбуков</a>
+                    <a href="#">Корпуса для ноутбуков</a>
+                    <a href="#">Кулеры и системы охлаждения</a>
+                    <a href="#">Замки для ноутбуков</a>
+                </div>
+                <div class="mobmenu__category-item">
+                    <p >Оргтехника и расходные материалы</p>
+                    <a href="#">Ноутбуки</a>
+                    <a href="#">Сумки для ноутбуков</a>
+                    <a href="#">Подставки для ноутбуков</a>
+                    <a href="#">Блоки питания для ноутбуков</a>
+                    <a href="#">Док-станции для ноутбуков</a>
+                    <a href="#">Аккумуляторы для ноутбуков</a>
+                    <a href="#">Матрицы для ноутбуков</a>
+                    <a href="#">Защитные накладки для клавиатуры</a>
+                    <a href="#">Клавиатуры для ноутбуков</a>
+                    <a href="#">Защитные пленки и стекла</a>
+                    <a href="#">Петли для ноутбуков</a>
+                    <a href="#">Корпуса для ноутбуков</a>
+                    <a href="#">Кулеры и системы охлаждения</a>
+                    <a href="#">Замки для ноутбуков</a>
+                </div>
+
+            </div>
+            <div class="mobmenu__bottom">
+                <div class="mobmenu__bottom-first" data-content="1">
+                    <a href="#">Горячие предложения</a>
+                    <a href="#">Новинки</a>
+                    <a href="#">Акции</a>
+                    <a href="#">Скидки</a>
+                    <a href="#">Бонусная карта</a>
+                </div>
+                <div class="mobmenu__bottom-second hidden" data-content="2">
+                    <div class="mobmenu__tel">
+                        <p>8 (7232) 24-51-88</p>
+                        <a href="#" class="mobmenu__call">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container__header">
         <header class="header">
             <div class="header__top">
@@ -32,6 +117,7 @@
                 </div>
             </div>
             <div class="header__center">
+                <div class="header__center-menu"></div>
                 <div class="header__center-item">
                     <div class="header__logo">
                         <a href="index.html" class="header__logo-ref"></a>
@@ -2528,6 +2614,38 @@
             </div>
         </main>
    </div>
+   <div class="container__fixedfooter">
+    <div class="fixedfooter">
+        <div class="fixedfooter__item">
+            <a href="#">
+                <img src="./icns/favourite.svg" alt="">
+                <p>Избранное</p>
+                <p class="fixedfooter__count hidden"></p>
+            </a>
+        </div>
+        <div class="fixedfooter__item">
+            <a href="">
+                <img src="./icns/comparison.svg" alt="">
+                <p>Сравнение</p>
+                <p class="fixedfooter__count hidden"></p>
+            </a>
+        </div>
+        <div class="fixedfooter__item">
+            <a href="#">
+                <img src="./icns/cart-bag-black.svg" alt="">
+                <p>Корзина</p>
+                <p class="fixedfooter__count">3</p>
+            </a>
+        </div>
+        <div class="fixedfooter__item">
+            <a href="#">
+                <img src="./icns/user-icon-black.svg" alt="">
+                <p>Кабинет</p>
+            </a>
+
+        </div>
+    </div>
+</div>
     <div class="container__footer">
         <footer class="footer">
             <div class="footer__info">
@@ -2589,7 +2707,7 @@
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src=".//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
     <script src="./app/js/script.js"></script>
     <script src="./app/js/product.js"></script>
